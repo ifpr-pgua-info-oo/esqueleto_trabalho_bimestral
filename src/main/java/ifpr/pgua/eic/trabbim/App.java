@@ -1,20 +1,11 @@
-package ifpr.pgua.eic.biblioteca;
+package ifpr.pgua.eic.trabbim;
 
-import ifpr.pgua.eic.biblioteca.repositorios.Biblioteca;
-import ifpr.pgua.eic.biblioteca.telas.CadastroAutor;
-import ifpr.pgua.eic.biblioteca.telas.CadastroLivro;
-import ifpr.pgua.eic.biblioteca.telas.CadastroRevista;
-import ifpr.pgua.eic.biblioteca.telas.Home;
-import ifpr.pgua.eic.biblioteca.telas.Listas;
+import ifpr.pgua.eic.trabbim.repositorios.Escola;
+import ifpr.pgua.eic.trabbim.telas.Home;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.geometry.Insets;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.StackPane;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.util.Callback;
 
@@ -24,18 +15,18 @@ import javafx.util.Callback;
  */
 public class App extends Application {
 
-    private Biblioteca biblioteca;
+    private Escola escola;
     
     @Override
     public void start(Stage stage) {
         
-        biblioteca = new Biblioteca();
+        escola = new Escola();
         
         /*SOMENTE EM TEMPO DE DESENVOLVIMENTO*/
         /*DESABILITAR EM PRODUCAO*/
-        biblioteca.povoa();
+        escola.povoa();
 
-        Parent root = loadTela("fxml/home.fxml", (o)->new Home(biblioteca));
+        Parent root = loadTela("fxml/home.fxml", (o)->new Home(escola));
 
         Scene scene = new Scene(root, 720, 480);
         

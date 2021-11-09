@@ -1,0 +1,18 @@
+
+.root{
+    -fx-background-color: #121212;
+}
+
+.button{
+    -fx-background-color: #c7c5c5;
+    -fx-text-fill: rgb(204, 97, 204);
+}
+
+.text-field{
+    -fx-font-size: 10;
+    -fx-text-fill: red;
+}
+
+.label{
+    -fx-text-fill: white;
+}

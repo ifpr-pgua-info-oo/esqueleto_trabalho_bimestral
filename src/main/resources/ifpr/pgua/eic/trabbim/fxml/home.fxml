@@ -13,7 +13,7 @@
              stylesheets="@../css/estilo.css" 
              xmlns="http://javafx.com/javafx/17" 
              xmlns:fx="http://javafx.com/fxml/1" 
-             fx:controller="ifpr.pgua.eic.biblioteca.telas.Home">
+             fx:controller="ifpr.pgua.eic.trabbim.telas.Home">
 
     <left>
 
@@ -21,10 +21,12 @@
             <padding>
                 <Insets topRightBottomLeft="8.0" />
             </padding>
-            <Button onAction="#loadListas" text="Listas" />
-            <Button onAction="#loadCadastraAutor" text="Cadastro Autor" />
-            <Button onAction="#loadCadastraRevista" text="Cadastro Revista" />
-            <Button onAction="#loadCadastraLivro" text="Cadastro Livro" />
+            <Button text="Listas" />
+            <Button text="Cadastro Professor" />
+            <Button text="Cadastro Aluno" />
+            <Button text="Cadastro Curso" />
+            <Button text="Des/Matricular Aluno Curso" />
+                        
            <ToggleButton fx:id="btTema" mnemonicParsing="false" onAction="#mudaTema" text="DarkMode" /> 
             
         </VBox>
