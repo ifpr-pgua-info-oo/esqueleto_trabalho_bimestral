@@ -20,7 +20,7 @@ public class App extends Application {
     @Override
     public void start(Stage stage) {
         
-        escola = new Escola();
+        escola = new Escola("X","X");
         
         /*SOMENTE EM TEMPO DE DESENVOLVIMENTO*/
         /*DESABILITAR EM PRODUCAO*/
